@@ -1,0 +1,5 @@
+# Configuration for trop
+
+# the name and email that will be used to open the backport
+tropName: mehdi-vaadin
+tropEmail: mehdi-vaadin@vaadin.com
