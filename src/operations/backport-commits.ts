@@ -40,7 +40,6 @@ export const backportCommitsToBranch = async (options: BackportOptions) => {
   log('backportCommitsToBranch', LogLevel.INFO, 'sha: ' + options.sha);
   // await git.raw(['cherry-pick', options.sha]);
   for (const patch of options.patches) {
-    log('backportCommitsToBranch', LogLevel.INFO, 'patch: ' + patch);
     await fs.writeFile(patchPath, patch, 'utf8');
 
     log('backportCommitsToBranch', LogLevel.INFO, 'after writeFile');
